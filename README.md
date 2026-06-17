@@ -2,6 +2,16 @@
 
 DEMERAS is a role-based mobile operations app built as an MIS/YBS portfolio case-study. It explores how small businesses can move from informal chat and verbal follow-up toward clearer operational communication, role-aware conversations and documented demo evidence. Demo Freeze v1 focuses on Android smoke-tested direct and group conversation flows.
 
+## Türkçe Özet
+
+DEMERAS, küçük işletmelerde WhatsApp benzeri dağınık iletişimin yerine daha düzenli, rol bazlı ve kayıt mantığı olan bir operasyon iletişimi deneyimi tasarlamak için geliştirilmiş bir mobil uygulama case-study projesidir.
+
+Bu proje; Yönetim Bilişim Sistemleri bakış açısıyla iş analizi, ürün düşüncesi, mobil arayüz tasarımı, React Native / Expo geliştirme, Supabase Auth, RLS/RPC servis sınırları ve Android smoke test süreçlerini göstermek amacıyla hazırlanmıştır.
+
+Demo Freeze v1 kapsamında doğrudan sohbet başlatma, grup sohbeti oluşturma, mesaj gönderme, sohbet listesi yönetimi ve mesaj seçme/silme gibi temel akışlar Android üzerinde test edilmiştir.
+
+Bu proje gerçek müşteri, gelir, canlı pilot veya production kullanım iddiası taşımaz; CV, portföy, staj ve mülakatlarda açıklanabilir teknik/ürün kanıtı olarak sunulmaktadır.
+
 ---
 
 ## Problem Statement
@@ -26,6 +36,46 @@ The app focuses on:
 
 ---
 
+## Screenshots
+
+### Role-based ChatList / Owner Panel
+
+![DEMERAS ChatList](screenshots/01chatlist.png)
+
+The owner dashboard shows role-based access, conversation filters, direct chat creation, group chat creation, and account access from a single mobile screen.
+
+### Start a Direct Conversation
+
+![Direct conversation sheet](screenshots/02directsheet.png)
+
+The direct conversation sheet allows an owner or manager to start a one-to-one operational conversation with an eligible team member.
+
+### Create a Group Conversation
+
+![Group creation](screenshots/03groupcreate.png)
+
+The group creation flow supports naming a team conversation and selecting multiple eligible participants before creating the group.
+
+### Group Chat Detail
+
+![Group chat detail](screenshots/04groupchatdetail.png)
+
+The group chat screen supports operational messaging with message type controls such as normal message, job request, and emergency.
+
+### Multi-select Conversation Actions
+
+![ChatList multi-select](screenshots/05chatlistmultiselect.png)
+
+ChatList supports multi-select actions such as pinning and removing conversations from the user’s own list without deleting the underlying business records.
+
+### Message Selection / Soft Delete UI
+
+![Message delete selection](screenshots/06messagedeleteselection.png)
+
+Own normal or job messages can be selected for controlled soft deletion. DEMERAS avoids hard delete behavior and keeps audit-friendly business records.
+
+---
+
 ## Core Features Completed In Demo Freeze v1
 
 - Login/session path verified during Android smoke testing.
@@ -37,7 +87,6 @@ The app focuses on:
 - Return to ChatList and new group card verified.
 - No red screen observed during the tested direct/group paths.
 
----
 
 ## Direct Conversation Flow Proof
 
