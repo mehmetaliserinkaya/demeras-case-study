@@ -76,7 +76,7 @@ Own normal or job messages can be selected for controlled soft deletion. DEMERAS
 
 ---
 
-## Core Features Completed In Demo Freeze v1
+## Core Features Completed in Demo Freeze v1
 
 - Login/session path verified during Android smoke testing.
 - ChatList opened successfully.
@@ -86,6 +86,18 @@ Own normal or job messages can be selected for controlled soft deletion. DEMERAS
 - First group message sent successfully.
 - Return to ChatList and new group card verified.
 - No red screen observed during the tested direct/group paths.
+
+---
+
+## Post-freeze Interaction Polish
+
+After Demo Freeze v1, the app was further polished with:
+
+* Multi-select ChatList actions for pinning and removing conversations from the user’s own list.
+* Persistent per-user conversation removal backed by Supabase RPC.
+* Message selection mode for own normal/job messages.
+* Controlled soft-delete behavior for messages, avoiding hard delete and preserving audit-friendly record discipline.
+* Cleaner account/header and screenshot-ready ChatList presentation.
 
 
 ## Direct Conversation Flow Proof
