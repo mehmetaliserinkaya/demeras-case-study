@@ -20,32 +20,32 @@ DEMERAS is designed as a controlled operations inbox rather than a general socia
 
 The app focuses on:
 
-- Role-based access and communication.
-- ChatList as the main operations surface.
-- Direct conversation creation for focused one-to-one coordination.
-- Group conversation creation for small team coordination.
-- Evidence-driven checkpoints and Android smoke testing.
+* Role-based access and communication.
+* ChatList as the main operations surface.
+* Direct conversation creation for focused one-to-one coordination.
+* Group conversation creation for small team coordination.
+* Evidence-driven checkpoints and Android smoke testing.
 
 ---
 
 ## Core Features Completed In Demo Freeze v1
 
-- Login/session path verified during Android smoke testing.
-- ChatList opened successfully.
-- Owner dashboard / ChatList reviewed.
-- Account modal reviewed.
-- Direct conversation creation flow completed.
-- Direct conversation reviewed.
-- Group conversation creation flow completed.
-- Group conversation reviewed.
-- ChatDetail navigation verified.
-- First group message sent successfully.
-- Return to ChatList and new group card verified.
-- Multi-select remove reviewed.
-- Soft-delete behavior reviewed.
-- Emergency send/visibility/take/resolve reviewed.
-- Open incidents and resolved incidents filters reviewed.
-- No red screen observed during the tested direct/group paths.
+* Login/session path verified during Android smoke testing.
+* ChatList opened successfully.
+* Owner dashboard / ChatList reviewed.
+* Account modal reviewed.
+* Direct conversation creation flow completed.
+* Direct conversation reviewed.
+* Group conversation creation flow completed.
+* Group conversation reviewed.
+* ChatDetail navigation verified.
+* First group message sent successfully.
+* Return to ChatList and new group card verified.
+* Multi-select remove reviewed.
+* Soft-delete behavior reviewed.
+* Emergency send/visibility/take/resolve reviewed.
+* Open incidents and resolved incidents filters reviewed.
+* No red screen observed during the tested direct/group paths.
 
 ---
 
@@ -53,11 +53,11 @@ The app focuses on:
 
 After the initial demo freeze, the interaction layer was tightened for portfolio evidence:
 
-- Soft-deleted messages no longer leave empty outgoing bubbles.
-- Normal/job outgoing messages use conservative sent indicators only; reliable delivered/read receipt modeling is not claimed.
-- Emergency send failures now show a safe user-facing alert instead of failing silently.
-- Emergency send resets narrowed message filters so the new emergency remains visible.
-- Resolved incident filter helper copy was corrected.
+* Soft-deleted messages no longer leave empty outgoing bubbles.
+* Normal/job outgoing messages use conservative sent indicators only; reliable delivered/read receipt modeling is not claimed.
+* Emergency send failures now show a safe user-facing alert instead of failing silently.
+* Emergency send resets narrowed message filters so the new emergency remains visible.
+* Resolved incident filter helper copy was corrected.
 
 ---
 
@@ -67,22 +67,22 @@ The final evidence package was collected separately as:
 
 `DEMERAS_FINAL_SMOKE_EVIDENCE.zip`
 
-The ZIP is kept outside the public repository as portfolio evidence; the screenshots are not stored in this repo.
+The ZIP is kept outside the public repository as portfolio evidence. The final smoke evidence screenshots listed below are not stored in this public repo.
 
-- `01_chatlist_owner_header.png` - PASS
-- `02_account_modal_owner.png` - PASS
-- `03_direct_conversation.png` - PASS
-- `04_group_conversation.png` - PASS
-- `05_multiselect_remove.png` - PASS
-- `06_soft_delete.png` - PASS
-- `07_owner_to_worker_emergency_visible.png` - PASS
-- `08_worker_take_emergency.png` - PASS
-- `09_worker_resolve_emergency.png` - PASS
-- `10_worker_to_owner_emergency_visible.png` - PASS
-- `11_owner_take_emergency.png` - PASS
-- `12_owner_resolve_emergency.png` - PASS
-- `13_open_incidents_filter.png` - PASS
-- `14_resolved_incidents_filter.png` - PASS
+* `01_chatlist_owner_header.png` - PASS
+* `02_account_modal_owner.png` - PASS
+* `03_direct_conversation.png` - PASS
+* `04_group_conversation.png` - PASS
+* `05_multiselect_remove.png` - PASS
+* `06_soft_delete.png` - PASS
+* `07_owner_to_worker_emergency_visible.png` - PASS
+* `08_worker_take_emergency.png` - PASS
+* `09_worker_resolve_emergency.png` - PASS
+* `10_worker_to_owner_emergency_visible.png` - PASS
+* `11_owner_take_emergency.png` - PASS
+* `12_owner_resolve_emergency.png` - PASS
+* `13_open_incidents_filter.png` - PASS
+* `14_resolved_incidents_filter.png` - PASS
 
 This evidence is manual Android emulator smoke evidence, not production QA certification. Normal/job chat messages use conservative sent indicators; reliable delivered/read receipt modeling is not claimed.
 
@@ -128,12 +128,12 @@ Android smoke-tested group flow:
 
 ## Tech Stack
 
-- React Native / Expo.
-- Supabase Auth.
-- Supabase RLS/RPC boundaries.
-- Role-based access design.
-- Android smoke testing.
-- Git checkpoint and evidence discipline.
+* React Native / Expo.
+* Supabase Auth.
+* Supabase RLS/RPC boundaries.
+* Role-based access design.
+* Android smoke testing.
+* Git checkpoint and evidence discipline.
 
 ---
 
@@ -141,11 +141,11 @@ Android smoke-tested group flow:
 
 The application is organized around role-aware product flows:
 
-- UI screens present the role-based operations experience.
-- Conversation services handle direct and group creation boundaries.
-- Supabase Auth provides identity/session behavior.
-- Supabase RLS/RPC supports safer backend access patterns.
-- Documentation records tested behavior, known deferred scope and demo readiness.
+* UI screens present the role-based operations experience.
+* Conversation services handle direct and group creation boundaries.
+* Supabase Auth provides identity/session behavior.
+* Supabase RLS/RPC supports safer backend access patterns.
+* Documentation records tested behavior, known deferred scope and demo readiness.
 
 ---
 
@@ -159,23 +159,23 @@ Demo Freeze v1 means the project has a stable, explainable portfolio checkpoint 
 
 ## Intentionally Deferred
 
-- Media/photo upload hardening and broader attachment workflows.
-- Incident center redesign.
-- Broader Supabase PR19/21/22/23/24/25 work.
-- Notification polish.
-- Production hardening.
-- Google Play release, unless completed in a future checkpoint.
-- Full employee/business-systems management surface, currently archived/vNext.
+* Media/photo upload hardening and broader attachment workflows.
+* Incident center redesign.
+* Broader Supabase PR19/21/22/23/24/25 work.
+* Notification polish.
+* Production hardening.
+* Google Play release, unless completed in a future checkpoint.
+* Full employee/business-systems management surface, currently archived/vNext.
 
 ---
 
 ## What I Learned
 
-- How to translate a business communication problem into scoped product flows.
-- How to define demo evidence instead of relying on vague “it works” claims.
-- How to build React Native / Expo flows backed by Supabase Auth and role-aware service boundaries.
-- How to separate completed demo proof from deferred technical work.
-- How to keep portfolio language honest and useful for CV, internship and interview contexts.
+* How to translate a business communication problem into scoped product flows.
+* How to define demo evidence instead of relying on vague “it works” claims.
+* How to build React Native / Expo flows backed by Supabase Auth and role-aware service boundaries.
+* How to separate completed demo proof from deferred technical work.
+* How to keep portfolio language honest and useful for CV, internship and interview contexts.
 
 ---
 
@@ -185,11 +185,11 @@ DEMERAS is presented as a portfolio/demo project and MIS/YBS case-study.
 
 It does not claim:
 
-- real paying customers,
-- revenue,
-- production usage,
-- real company adoption,
-- live pilot results,
-- Google Play publication.
+* real paying customers,
+* revenue,
+* production usage,
+* real company adoption,
+* live pilot results,
+* Google Play publication.
 
-The current proof is Demo Freeze v1 with documented Android smoke evidence.
+The current proof is Demo Freeze v1 plus the Final Smoke Evidence Package with documented Android emulator smoke evidence.
