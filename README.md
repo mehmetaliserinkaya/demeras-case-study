@@ -4,6 +4,16 @@ DEMERAS is a role-based mobile operations app built as an MIS/YBS portfolio case
 
 Current checkpoint: Final Smoke Evidence Package completed with 14/14 manually reviewed Android emulator screenshots marked PASS. The evidence covers owner dashboard, account modal, direct chat, group chat, multi-select remove, soft-delete behavior, Owner <-> Worker emergency lifecycle, and open/resolved incident filters.
 
+## Portfolio Case Study Presentation
+
+A concise Turkish portfolio presentation is available here:
+
+[DEMERAS Mobil Operasyon Portföy Vaka Çalışması (PDF)](docs/DEMERAS_Portfoy_Vaka_Calismasi.pdf)
+
+This presentation summarizes the problem, role-based communication flow, direct/group chat scenarios, message control behavior, emergency lifecycle, incident filtering, demo evidence and honest project scope.
+
+The presentation is intended as portfolio evidence for CV, LinkedIn, internship applications and interview discussions.
+
 ---
 
 ## Problem Statement
